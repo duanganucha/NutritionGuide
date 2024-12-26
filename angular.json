@@ -31,7 +31,7 @@
             ],
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "outputPath": "dist/",
+            "outputPath": "docs/",
             "polyfills": [
               "zone.js"
             ],
