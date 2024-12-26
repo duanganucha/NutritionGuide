@@ -1,0 +1,45 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #f5f5f5;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  .search-box {
+    margin-bottom: 1rem;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .category {
+    margin-bottom: 1rem;
+  }
+  .category h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  li:hover {
+    background: #e0e0e0;
+  }
+  li.active {
+    background: #2196f3;
+    color: white;
+  }
+  .empty-state,
+  .loading {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666;
+  }

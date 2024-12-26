@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="sidebar">
+    <app-menu-sidebar
+      (menuSelected)="onMenuSelected($event)"
+    ></app-menu-sidebar>
+  </div>
+  <div class="detail">
+    <app-menu-detail [selectedItem]="selectedMenuItem"></app-menu-detail>
+  </div>
+</div>

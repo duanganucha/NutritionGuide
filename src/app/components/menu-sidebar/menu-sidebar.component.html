@@ -1,0 +1,30 @@
+<div class="sidebar">
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="ค้นหาเมนูอาหาร..."
+      (input)="onSearch($event)"
+    />
+  </div>
+
+  <div *ngIf="loading" class="loading">กำลังโหลดเมนู...</div>
+
+  <div *ngIf="!loading && categories.length === 0" class="empty-state">
+    ไม่พบเมนูที่คุณค้นหา
+  </div>
+
+  <div *ngIf="!loading && categories.length > 0" class="categories">
+    <div *ngFor="let category of categories" class="category">
+      <h3>{{ category.name }}</h3>
+      <ul>
+        <li
+          *ngFor="let item of category.items"
+          (click)="selectMenu(item)"
+          [class.active]="selectedItem?.name === item.name"
+        >
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
